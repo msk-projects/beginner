@@ -1,0 +1,48 @@
+# 3. 💸 Expense Tracker (Beginner)
+
+**🎯 Overview**
+A CLI app to track **expenses and incomes**, categorize them, and generate summaries or budgets. Data is stored locally in JSON or CSV.
+
+**✅ Features / Requirements**
+
+* Commands:
+
+  * `add` → add an expense/income
+  * `list` → view entries with filters
+  * `delete <id>` → remove an entry
+  * `summary` → show totals by category/date
+  * `budget` → set and check category budgets
+* Entry fields: **id, date, type (expense/income), amount, category, note**
+* Auto-create JSON file if missing
+
+**💻 Example CLI Commands**
+
+```bash
+xp add --type expense --amount 350 --cat food --note "Lunch"
+xp add --type income --amount 1000 --cat freelance --note "Website fix"
+xp list --cat food --from 2025-09-01 --to 2025-09-30
+xp summary --by category --month 2025-09
+xp budget set --cat food --amount 3000
+xp budget status --month 2025-09
+```
+
+**🗂️ JSON Data Structure**
+
+```json
+{
+  "entries": [
+    { "id": 1, "date": "2025-09-03", "type": "expense", "amount": 350, "category": "food", "note": "Lunch" }
+  ],
+  "budgets": { "food": 3000 }
+}
+```
+
+**🚀 Getting Started**
+
+1. Set up CLI argument parser
+2. Implement storage functions (load, save, auto-create JSON)
+3. Add `add` and `list` first → test thoroughly
+4. Implement `summary` and `budget` calculations
+5. Ensure invalid data (e.g., negative amount) is rejected
+
+---
