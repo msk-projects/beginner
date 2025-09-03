@@ -1,5 +1,3 @@
----
-
 # 2. GitHub User Activity (Beginner)
 
 **🎯 Overview**
