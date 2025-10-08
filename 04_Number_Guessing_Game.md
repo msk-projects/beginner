@@ -1,4 +1,4 @@
-### 4. 🎲 Number Guessing Game
+# 4. 🎲 Number Guessing Game
 
 **Category:** CLI · Game · Randomization
 **Level:** Beginner
