@@ -1,4 +1,4 @@
-### 3. 💸 Expense Tracker
+# 3. 💸 Expense Tracker
 
 **Category:** CLI · Filesystem · Budgeting
 **Level:** Beginner
